@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "timestamp": "2026-03-29T15:14:38.017646",
+    "total_scenarios": 20,
+    "overall_score": 81.0,
+    "total_achieved": 81,
+    "total_possible": 100
+  },
+  "results": [
+    {
+      "id": "T01",
+      "name": "Laptop screen crack \u2014 VoltCare Plus",
+      "expected_path": "tech_bar",
+      "actual_path": "tech_bar",
+      "expected_coverage": [
+        "voltcare_plus_ad",
+        "manufacturer_warranty"
+      ],
+      "actual_coverage": "manufacturer_warranty",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": false,
+      "expected_urgency": [
+        "LOW",
+        "MEDIUM"
+      ],
+      "actual_urgency": "LOW",
+      "confidence": "HIGH",
+      "reasoning": "8-month-old laptop with cracked screen classified as display fault with HIGH confidence. Parts available (LCD screen assembly \u00a389.99, in stock). Despite being accidental damage, product is within 12-month manufacturer warranty providing free repair. Total repair cost \u00a3142.49 is well below BER threshold (19% vs 65% limit). Tech Bar repair recommended - straightforward screen replacement.",
+      "s_path": 1,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 5,
+      "notes": "Screen replacement at Tech Bar, VoltCare Plus AD or manufacturer warranty"
+    },
+    {
+      "id": "T02",
+      "name": "Laptop battery replacement \u2014 CRA",
+      "expected_path": "tech_bar",
+      "actual_path": "tech_bar",
+      "expected_coverage": [
+        "consumer_rights_act",
+        "voltcare_essential",
+        "voltcare_plus"
+      ],
+      "actual_coverage": "consumer_rights_act",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": false,
+      "expected_urgency": [
+        "LOW",
+        "MEDIUM"
+      ],
+      "actual_urgency": "LOW",
+      "confidence": "MEDIUM",
+      "reasoning": "18-month-old laptop with swollen battery causing rapid drain and trackpad displacement. Classified as battery fault with medium confidence. Parts available in stock (\u00a334.99). Covered under Consumer Rights Act despite being outside manufacturer warranty. Total repair cost \u00a352.49 is well below BER threshold (8.7% of product value). Suitable for Tech Bar repair with no customer cost.",
+      "s_path": 1,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 5,
+      "notes": "Battery fault, CRA applies at 18 months, Tech Bar repair"
+    },
+    {
+      "id": "T03",
+      "name": "Phone screen crack \u2014 in warranty",
+      "expected_path": "tech_bar",
+      "actual_path": "newark",
+      "expected_coverage": [
+        "voltcare_plus_ad",
+        "manufacturer_warranty"
+      ],
+      "actual_coverage": "manufacturer_warranty",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": true,
+      "expected_urgency": [
+        "LOW",
+        "MEDIUM"
+      ],
+      "actual_urgency": "MEDIUM",
+      "confidence": "LOW",
+      "reasoning": "5-month-old phone with cracked screen and partial touchscreen failure. Classified as accidental damage but covered under manufacturer warranty (within 12 months). No standard parts available, requiring Newark specialist assessment. Not BER (repair cost \u00a367.50 vs product value \u00a3500). Customer pays nothing due to warranty coverage.",
+      "s_path": 0,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 0,
+      "s_urgency": 1,
+      "total": 3,
+      "notes": "Phone screen, Tech Bar, VoltCare Plus or manufacturer warranty"
+    },
+    {
+      "id": "T04",
+      "name": "TV smart features not working",
+      "expected_path": "tech_bar",
+      "actual_path": "newark",
+      "expected_coverage": [
+        "voltcare_essential",
+        "manufacturer_warranty"
+      ],
+      "actual_coverage": "manufacturer_warranty",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": true,
+      "expected_urgency": [
+        "LOW",
+        "MEDIUM"
+      ],
+      "actual_urgency": "MEDIUM",
+      "confidence": "LOW",
+      "reasoning": "Smart TV with app crashing issues classified as unknown component (LOW confidence). Product is within 10-month manufacturer warranty so customer pays nothing. No standard parts identified, requires specialist assessment at Newark. Not BER (\u00a367.50 vs \u00a3500 value). Escalated due to parts availability concerns despite warranty coverage.",
+      "s_path": 0,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 0,
+      "s_urgency": 1,
+      "total": 3,
+      "notes": "Software fault, Tech Bar can handle, manufacturer warranty or VoltCare"
+    },
+    {
+      "id": "T05",
+      "name": "Phone liquid damage \u2014 VoltCare Complete",
+      "expected_path": "newark",
+      "actual_path": "newark",
+      "expected_coverage": [
+        "voltcare_complete"
+      ],
+      "actual_coverage": "voltcare_complete",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": true,
+      "actual_escalate": true,
+      "expected_urgency": [
+        "HIGH"
+      ],
+      "actual_urgency": "HIGH",
+      "confidence": "MEDIUM",
+      "reasoning": "Liquid damage case with coffee spill causing multiple component failures. VoltCare Complete provides full coverage with no excess. High urgency due to 48-hour SLA requirement. Requires Newark specialist assessment as no standard parts available. Not BER as repair cost (\u00a390) is only 13.8% of product value (\u00a3650).",
+      "s_path": 1,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 5,
+      "notes": "Liquid damage always Newark, Complete = HIGH urgency, escalate"
+    },
+    {
+      "id": "T06",
+      "name": "Laptop motherboard failure \u2014 no coverage",
+      "expected_path": "newark",
+      "actual_path": "newark",
+      "expected_coverage": [
+        "consumer_rights_act",
+        "no_coverage"
+      ],
+      "actual_coverage": "consumer_rights_act",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": false,
+      "expected_urgency": [
+        "MEDIUM"
+      ],
+      "actual_urgency": "MEDIUM",
+      "confidence": "MEDIUM",
+      "reasoning": "30-month-old laptop with complete power failure indicating motherboard fault. Classification confidence is MEDIUM. Parts available but with 5-day lead time. Covered under Consumer Rights Act as statutory rights still apply. Repair is economical at \u00a3384.99 vs \u00a3800 product value (48% of value, below 65% BER threshold). Requires Newark specialist for motherboard replacement.",
+      "s_path": 1,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 5,
+      "notes": "Motherboard failure, Newark specialist, CRA may apply at 30 months"
+    },
+    {
+      "id": "T07",
+      "name": "TV backlight failure \u2014 VoltCare Complete",
+      "expected_path": "newark",
+      "actual_path": "newark",
+      "expected_coverage": [
+        "voltcare_complete"
+      ],
+      "actual_coverage": "voltcare_complete",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": true,
+      "expected_urgency": [
+        "HIGH"
+      ],
+      "actual_urgency": "HIGH",
+      "confidence": "LOW",
+      "reasoning": "TV backlight failure classified with LOW confidence as 'unknown' component. No standard parts available requiring Newark specialist assessment. VoltCare Complete provides full coverage with 48-hour SLA making this HIGH urgency. Not BER at \u00a367.50 vs \u00a3600 value. Escalation needed due to parts availability uncertainty.",
+      "s_path": 1,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 0,
+      "s_urgency": 1,
+      "total": 4,
+      "notes": "Backlight is display fault, Newark, Complete = HIGH urgency"
+    },
+    {
+      "id": "T08",
+      "name": "Phone charging port \u2014 no VoltCare",
+      "expected_path": "newark",
+      "actual_path": "tech_bar",
+      "expected_coverage": [
+        "consumer_rights_act",
+        "no_coverage"
+      ],
+      "actual_coverage": "consumer_rights_act",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": false,
+      "expected_urgency": [
+        "MEDIUM"
+      ],
+      "actual_urgency": "LOW",
+      "confidence": "MEDIUM",
+      "reasoning": "Phone charging issue classified as battery fault (MEDIUM confidence). Parts available in stock. At 20 months old, covered under Consumer Rights Act. Repair cost \u00a337.49 vs \u00a3400 product value (9.4% ratio) - economically viable. Routed to Tech Bar for same-day repair.",
+      "s_path": 0,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 1,
+      "s_urgency": 0,
+      "total": 3,
+      "notes": "Charging port is connectivity fault, Newark, CRA at 20 months"
+    },
+    {
+      "id": "T09",
+      "name": "Washing machine not draining \u2014 CRA",
+      "expected_path": "engineer",
+      "actual_path": "engineer",
+      "expected_coverage": [
+        "consumer_rights_act"
+      ],
+      "actual_coverage": "consumer_rights_act",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": false,
+      "expected_urgency": [
+        "MEDIUM"
+      ],
+      "actual_urgency": "MEDIUM",
+      "confidence": "MEDIUM",
+      "reasoning": "36-month-old washing machine with drainage issue. Classified as water system fault requiring engineer skill. Parts available (drain pump \u00a329.99). Repair cost \u00a3102.49 vs product value \u00a3450 = economical repair. Consumer Rights Act coverage applies - customer doesn't pay but engineer must establish if fault was present at purchase.",
+      "s_path": 1,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 5,
+      "notes": "Drain pump fault, engineer visit, CRA at 36 months"
+    },
+    {
+      "id": "T10",
+      "name": "Washing machine drum bearing \u2014 VoltCare Essential",
+      "expected_path": "engineer",
+      "actual_path": "engineer",
+      "expected_coverage": [
+        "voltcare_essential"
+      ],
+      "actual_coverage": "voltcare_essential",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": false,
+      "expected_urgency": [
+        "MEDIUM"
+      ],
+      "actual_urgency": "MEDIUM",
+      "confidence": "MEDIUM",
+      "reasoning": "Washing machine drum fault with loud banging noise classified as drum bearing issue requiring engineer visit. VoltCare Essential provides full coverage for mechanical breakdown. Parts available in stock. Repair cost \u00a3209.99 is well below BER threshold (42% of product value). Standard engineer booking appropriate with 3-7 day timeframe.",
+      "s_path": 1,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 5,
+      "notes": "Bearing failure, engineer, VoltCare Essential covers breakdown"
+    },
+    {
+      "id": "T11",
+      "name": "Fridge door seal \u2014 simple fix",
+      "expected_path": "engineer",
+      "actual_path": "engineer",
+      "expected_coverage": [
+        "consumer_rights_act"
+      ],
+      "actual_coverage": "consumer_rights_act",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": false,
+      "expected_urgency": [
+        "MEDIUM",
+        "LOW"
+      ],
+      "actual_urgency": "MEDIUM",
+      "confidence": "MEDIUM",
+      "reasoning": "28-month-old fridge with damaged door seal. Classified as mechanical fault with medium confidence. Door seal replacement part (\u00a314.99) available immediately. Product covered under Consumer Rights Act as it's outside manufacturer warranty but within reasonable durability expectations. Total repair cost \u00a342.49 is well below BER threshold (8.5% vs 65% threshold). Straightforward engineer repair with no customer charge.",
+      "s_path": 1,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 5,
+      "notes": "Door seal is mechanical fault, simple engineer fix, CRA applies"
+    },
+    {
+      "id": "T12",
+      "name": "Dishwasher not draining \u2014 VoltCare Plus",
+      "expected_path": "engineer",
+      "actual_path": "engineer",
+      "expected_coverage": [
+        "voltcare_plus",
+        "manufacturer_warranty"
+      ],
+      "actual_coverage": "voltcare_plus",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": true,
+      "expected_urgency": [
+        "MEDIUM"
+      ],
+      "actual_urgency": "MEDIUM",
+      "confidence": "HIGH",
+      "reasoning": "Dishwasher drainage fault classified with HIGH confidence as water system issue requiring engineer skills. No standard parts available in stock, but repair is economical at \u00a382.50 vs \u00a3350 product value. VoltCare Plus coverage means no cost to customer. Requires escalation due to parts availability issue.",
+      "s_path": 1,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 0,
+      "s_urgency": 1,
+      "total": 4,
+      "notes": "Water drainage fault, engineer, VoltCare Plus or manufacturer warranty"
+    },
+    {
+      "id": "T13",
+      "name": "Fridge compressor failure \u2014 BER",
+      "expected_path": "replace",
+      "actual_path": "newark",
+      "expected_coverage": [
+        "no_coverage"
+      ],
+      "actual_coverage": "no_coverage",
+      "expected_ber": true,
+      "actual_ber": false,
+      "expected_escalate": true,
+      "actual_escalate": true,
+      "expected_urgency": [
+        "HIGH",
+        "MEDIUM"
+      ],
+      "actual_urgency": "MEDIUM",
+      "confidence": "LOW",
+      "reasoning": "7-year-old fridge with cooling failure and compressor issues. Classification returned LOW confidence with 'unknown' component, indicating complex fault requiring specialist diagnosis. No warranty coverage means customer pays. At \u00a367.50 estimated cost vs \u00a3280 value (24.1% ratio), repair is economically viable. Routed to Newark for specialist assessment due to complex cooling system fault.",
+      "s_path": 0,
+      "s_coverage": 1,
+      "s_ber": 0,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 3,
+      "notes": "Compressor repair \u00a3255 vs \u00a3280 product value = 91% BER threshold exceeded"
+    },
+    {
+      "id": "T14",
+      "name": "Old laptop motherboard \u2014 BER",
+      "expected_path": "replace",
+      "actual_path": "newark",
+      "expected_coverage": [
+        "no_coverage"
+      ],
+      "actual_coverage": "consumer_rights_act",
+      "expected_ber": true,
+      "actual_ber": false,
+      "expected_escalate": true,
+      "actual_escalate": true,
+      "expected_urgency": [
+        "HIGH",
+        "MEDIUM"
+      ],
+      "actual_urgency": "MEDIUM",
+      "confidence": "LOW",
+      "reasoning": "This is a complex laptop hardware failure with multiple shorted components. The fault classification returned LOW confidence due to the non-standard nature of the fault. No parts are available from standard inventory, indicating this requires specialist assessment. While the repair is covered under Consumer Rights Act (product is 5 years old), the customer may need to demonstrate the fault was present at purchase. The repair is economically viable (\u00a367.50 vs \u00a3300 product value), but requires Newark specialist expertise.",
+      "s_path": 0,
+      "s_coverage": 0,
+      "s_ber": 0,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 2,
+      "notes": "Motherboard \u00a3250 labour + parts vs \u00a3300 product value = BER"
+    },
+    {
+      "id": "T15",
+      "name": "VoltCare Essential \u2014 AD not covered",
+      "expected_path": "newark",
+      "actual_path": "newark",
+      "expected_coverage": [
+        "voltcare_essential",
+        "no_coverage",
+        "consumer_rights_act"
+      ],
+      "actual_coverage": "not_covered",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": false,
+      "expected_urgency": [
+        "MEDIUM"
+      ],
+      "actual_urgency": "MEDIUM",
+      "confidence": "MEDIUM",
+      "reasoning": "TV was knocked off stand causing screen damage and power failure. Classified as power component fault (MEDIUM confidence). Parts available with no lead time. VoltCare Essential doesn't cover accidental damage so customer pays full cost. Repair is economical at \u00a3117.49 vs \u00a3700 product value (16.8% of value, well below 65% BER threshold). Routes to Newark for specialist repair.",
+      "s_path": 1,
+      "s_coverage": 0,
+      "s_ber": 1,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 4,
+      "notes": "Essential does not cover AD \u2014 customer pays or CRA if manufacturing defect"
+    },
+    {
+      "id": "T16",
+      "name": "VoltCare Complete \u2014 washing machine motor",
+      "expected_path": "engineer",
+      "actual_path": "engineer",
+      "expected_coverage": [
+        "voltcare_complete"
+      ],
+      "actual_coverage": "voltcare_complete",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": false,
+      "expected_urgency": [
+        "HIGH"
+      ],
+      "actual_urgency": "HIGH",
+      "confidence": "MEDIUM",
+      "reasoning": "Complete motor failure classified as mechanical breakdown requiring field engineer visit. VoltCare Complete covers the full repair cost with 48-hour SLA. Parts available immediately. Not BER as repair cost (\u00a3314.99) is 52.5% of product value, below 65% threshold.",
+      "s_path": 1,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 5,
+      "notes": "Complete covers motor failure, engineer, HIGH urgency from 48hr SLA"
+    },
+    {
+      "id": "T17",
+      "name": "Manufacturer warranty \u2014 new fridge fault",
+      "expected_path": "engineer",
+      "actual_path": "engineer",
+      "expected_coverage": [
+        "manufacturer_warranty"
+      ],
+      "actual_coverage": "manufacturer_warranty",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": false,
+      "expected_urgency": [
+        "MEDIUM"
+      ],
+      "actual_urgency": "MEDIUM",
+      "confidence": "HIGH",
+      "reasoning": "2-month-old fridge with cooling system fault identified with HIGH confidence. Complex repair requiring engineer visit. Product is within 12-month manufacturer warranty so customer pays nothing. Parts are available in stock. Repair cost of \u00a3157.49 is well below BER threshold (19.7% of product value). Standard warranty repair process applies.",
+      "s_path": 1,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 5,
+      "notes": "2 months old, manufacturer warranty, engineer visit"
+    },
+    {
+      "id": "T18",
+      "name": "Liquid damage \u2014 laptop \u2014 escalate",
+      "expected_path": "newark",
+      "actual_path": "tech_bar",
+      "expected_coverage": [
+        "voltcare_plus_ad"
+      ],
+      "actual_coverage": "voltcare_plus_ad",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": true,
+      "actual_escalate": false,
+      "expected_urgency": [
+        "MEDIUM",
+        "HIGH"
+      ],
+      "actual_urgency": "LOW",
+      "confidence": "MEDIUM",
+      "reasoning": "Liquid damage to laptop keyboard with screen flickering. VoltCare Plus covers accidental damage with \u00a349 excess. Keyboard parts available in stock. Not BER (\u00a379.99 vs \u00a3900 value). Routed to Tech Bar for same-day repair with liquid damage precautions.",
+      "s_path": 0,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 0,
+      "s_urgency": 0,
+      "total": 2,
+      "notes": "Liquid damage always escalates regardless of coverage"
+    },
+    {
+      "id": "T19",
+      "name": "Ambiguous fault \u2014 LOW confidence",
+      "expected_path": "newark",
+      "actual_path": "newark",
+      "expected_coverage": [
+        "manufacturer_warranty",
+        "consumer_rights_act"
+      ],
+      "actual_coverage": "manufacturer_warranty",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": true,
+      "actual_escalate": true,
+      "expected_urgency": [
+        "MEDIUM"
+      ],
+      "actual_urgency": "MEDIUM",
+      "confidence": "LOW",
+      "reasoning": "9-month-old phone with vague 'stopped working' symptoms. Classification returned LOW confidence with unknown component. Despite manufacturer warranty coverage, the unclear fault nature requires Newark specialist diagnosis. No standard parts identified. Not BER at \u00a367.50 vs \u00a3550 value.",
+      "s_path": 1,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 1,
+      "s_urgency": 1,
+      "total": 5,
+      "notes": "Vague description should produce LOW confidence and escalate"
+    },
+    {
+      "id": "T20",
+      "name": "Fridge cooling fault \u2014 VoltCare Complete high urgency",
+      "expected_path": "engineer",
+      "actual_path": "newark",
+      "expected_coverage": [
+        "voltcare_complete"
+      ],
+      "actual_coverage": "voltcare_complete",
+      "expected_ber": false,
+      "actual_ber": false,
+      "expected_escalate": false,
+      "actual_escalate": true,
+      "expected_urgency": [
+        "HIGH"
+      ],
+      "actual_urgency": "HIGH",
+      "confidence": "LOW",
+      "reasoning": "This fridge-freezer has a cooling issue in the main compartment while freezer works normally. The fault classification returned LOW confidence with unknown component, suggesting a complex issue requiring specialist diagnosis. Under VoltCare Complete coverage, customer pays nothing and has 48-hour SLA protection, making this HIGH urgency. Newark Repair Centre is appropriate for complex appliance repairs.",
+      "s_path": 0,
+      "s_coverage": 1,
+      "s_ber": 1,
+      "s_escalate": 0,
+      "s_urgency": 1,
+      "total": 3,
+      "notes": "Cooling fault on Complete = HIGH urgency 48hr SLA, engineer visit"
+    }
+  ]
+}
