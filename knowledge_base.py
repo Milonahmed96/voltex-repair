@@ -17,8 +17,10 @@ Contains:
 FAULT_CATEGORIES = {
     "laptop": {
         "display": [
-            "cracked screen", "screen lines", "backlight failure",
-            "flickering display", "no display", "dead pixels",
+    "cracked screen", "crack", "cracked", "broken screen",
+    "screen lines", "backlight failure", "flickering display",
+    "no display", "dead pixels", "smashed screen", "shattered screen",
+    "screen damage", "display damage",
         ],
         "battery": [
             "battery not charging", "battery drains fast",

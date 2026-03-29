@@ -93,8 +93,12 @@ def classify_fault(fault_description: str, product_type: str) -> str:
             matched_symptoms = symptom_matches
 
     # Detect liquid damage as override
-    liquid_keywords = ["spill", "liquid", "water", "wet", "flood", "coffee", "drink"]
-    is_liquid_damage = any(kw in fault_lower for kw in liquid_keywords)
+    liquid_keywords = ["spill", "liquid", "wet", "flood", "coffee", "drink", "submerged"]
+    appliance_products = ["washing_machine", "dishwasher", "fridge_freezer"]
+    is_liquid_damage = (
+    any(kw in fault_lower for kw in liquid_keywords)
+    and normalised_product not in appliance_products
+)
 
     if is_liquid_damage and "liquid" in FAULT_CATEGORIES.get(normalised_product, {}):
         best_component = "liquid"
@@ -407,6 +411,10 @@ def make_triage_decision(
         escalate       = is_liquid_damage  # liquid damage always escalates
         escalate_reason = "Liquid damage — extent of corrosion requires specialist assessment" if is_liquid_damage else ""
         urgency        = "HIGH" if is_liquid_damage else "MEDIUM"
+
+    # VoltCare Complete has 48-hour SLA — always HIGH urgency
+    if "complete" in (coverage_type or "").lower():
+        urgency = "HIGH"
 
     # Build technician brief
     technician_notes = []
